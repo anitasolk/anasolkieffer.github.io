@@ -7,33 +7,36 @@
     font-family: malinsha;
     src: url(malinsha.ttf);
 }
+/*------------------------------------------------------------------------------------HEADER-----------------------------------------------------------------------------------------*/
 header{
    background-image: url(logo1.jpeg);
    background-repeat: no-repeat;
    background-size:100% ; 
-   height: 600px;
+   height: 37.5em;
    text-align: right;
 }
 /*escritorio*/
-@media (min-width:1199.98px){
+@media (min-width:74.999em){
     body {background:white;}
 }
 /* tablet*/ 
-@media (min-width:576px)AND(max-width:991.98px)AND(orientation:portrait){
+@media (min-width:36em)AND(max-width:61.999em)AND(orientation:portrait){
     body { background: white;}
 }
 /*movil*/
-@media (max-width:575.89)AND(orientation:portrait){
+@media (max-width:35.993em)AND(orientation:portrait){
     body{background:white;}
 }
+/*------------------------------------------------------------------------------------carrito----------------------------------------------------------------------------------------*/
 .icoheader{
     display: flex;
     position: absolute;
     text-align: right;
     width: 2em;
-    right: 80px;
-    top:20px;
+    right: 5em;
+    top:1.25em ;
 }
+/*--------------------------------------------------------------------------------barra horizontal-----------------------------------------------------------------------------------*/
 .navegador ul{
     display: flex;
     background-color: #F5A6C4;
@@ -56,36 +59,43 @@ header{
     
     color:black;
     text-align: center;
-    padding: 14px 16px;
+    padding: 0.875em 1em;
     text-decoration:none;
 }
 li a:hover:not(.active){
     background-color:white;
 }
+/*------------------------------------------------------------------------------fin barra horizontal---------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------BODY------------------------------------------------------------------------------------------*/
 body{
     background-color: white; 
     overflow-x: hidden;
 }
+/*------------------------------------------------------------------------------------clima------------------------------------------------------------------------------------------*/
 .clima{
-    left:4px;
-    top:650px;
+    left:0.25em;
+    top:40.625em;
     position: absolute;
 }
 .titulobody{
     text-align: center;
-    font-weight: 700;
-    margin: 30px;
+    font-weight: 30rem;
+    margin: 10rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .texto{
     text-align: justify;
-    margin-left: 350px;
-    margin-right: 10px;
+    margin-left: 21.875em;
+    margin-right: 0.625em;
 }
+/*---------------------------------------------------------------------------comienzo del carrusel-----------------------------------------------------------------------------------*/
+
+/*---------------------------------------------------------------------------fin del carrusel----------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------FOOTER-------------------------------------------------------------------------------------------*/
 footer{
    background-color: rgb(188, 255, 246);
-   padding: 80px;
-   position: absolute;
+   padding: 5em;
+   position: relative;
    display: flex;
    width: 100%;
    bottom: 0;
@@ -93,9 +103,10 @@ footer{
    left: 0;
 
 }
+/*--------------------------------------------------------------------------------iconos---------------------------------------------------------------------------------------------*/
 .icono{
     font-family:Arial, Helvetica, sans-serif;
-    color: black;
+    color: black
 }
 ul{ 
     list-style:none;
@@ -104,30 +115,34 @@ ul{
     margin-left: 0em;
     display: flex;
     position: absolute;
-    bottom: 5px;
+    bottom: 0.313em;
+    top:2.5em;
 }
 .ico2{
     margin-left: 10em;
     display: flex;
     position: absolute;
-    bottom: 5px;
+    bottom: 0.313em;
+    top:2.5em;
 }
 .ico3{
     margin-left: 20em;
     display: flex;
     position: absolute;
-    bottom: 5px;
+    bottom: 0.313em;
+    top:2.5em;
 }
 .ico4{
     margin-left: 110em;
     display: flex;
     position: absolute;
-    bottom:5px;
+    bottom:0em;
+    top:5em;
 }
 .ico5{
     margin-left: 105em;
     display: flex;
     position: absolute;
-    bottom:5px;
+    bottom:0.313em;
     top: 3em;
 }
