@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-    <head> 
+    <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="#">
         <title>DULCE CARAMELO TIENDA ONLINE</title>
@@ -9,15 +9,11 @@
     </head>
     <header>
     <!--------------------------------------------------------------------HEADER------------------------------------------------------------------->
-    <!---------------------------------------------------------------contador de vicitas----------------------------------------------------------->
-        <div id="sfcyrhhbkty8jcepcxlc3ba2cjc31g8n91h">
-            <script type="text/javascript" src="https://counter3.optistats.ovh/private/counter.js?c=yrhhbkty8jcepcxlc3ba2cjc31g8n91h&down=async" async></script>
-            <noscript><a href="https://www.contadorvisitasgratis.com" title="http contador de visitas com">
-            <img src="https://counter3.optistats.ovh/private/contadorvisitasgratis.php?c=yrhhbkty8jcepcxlc3ba2cjc31g8n91h" border="0" title="http contador de visitas com" alt="http contador de visitas com"></a></noscript> 
-        </div>
-    <!-------------------------------------------------------------icono del carrito de compras---------------------------------------------------->
-        <div class="icoheader">
-        <a href="#" target ="-blank" rel="noopener noreferrer"><img  src="carrito.png"></a>
+    <!-----------------------------------------------------------icono del carrito de compras---------------------------------------------------->
+        <div class="carrito">
+            <figure>
+                <img src="carrito.png">
+            </figure>
         </div>
     </header>
     <body>    
@@ -25,46 +21,78 @@
     <!---------------------------------------------------------------barra horizontal-------------------------------------------------------------->
         <div class="navegador">
             <ul class="nav2">
-                <li><a href="#inicio"onclick="seleccionar(INICIO)"> Inicio</a></li>
-                <li><a href="#productos" onclick="seleccionar(PODUCTOS)"> Productos</a></li>
-                <li><a href="#accesorios"onclick="seleccionar(ACCESORIOS)"> Accesorios</a></li>
-                <li><a href="#giftcard"onclick="seleccionar(GIFT CARD)"> Gift Card</a></li>
-                <li><a href="#ofertas"onclick="seleccionar(OFERTAS)">Ofertas</a></li>
-                <li><a href="#nosotras"onclick="seleccionar(NOSOTRAS)">Nosotras</a></li>
+                <li><a href="#inicio"onclick="seleccionar(INICIO)"> INICIO</a></li>
+                <li><a href ="productos"onclick="seleccionar(PRODUCTOS)"> PRODUCTOS</a></li>
+                <li><a href="#accesorios"onclick="seleccionar(ACCESORIOS)"> ACCESORIOS</a></li>
+                <li><a href="#giftcard"onclick="seleccionar(GIFT CARD)"> GIFT CARD</a></li>
+                <li><a href="#ofertas"onclick="seleccionar(OFERTAS)">OFERTAS</a></li>
+                <li><a href="#nosotras"onclick="seleccionar(NOSOTRAS)">NOSOTRAS</a></li>
             </ul>
         </div>
     <!------------------------------------------------------------------clima---------------------------------------------------------------------->
-     <!-- www.tutiempo.net - Ancho:115px - Alto:204px -->
+      <!-- www.tutiempo.net - Ancho:115px - Alto:204px --
+    <div class="clima">
     <div id="TT_FCgwbBthYcaa8aeU9fzDjzzzz7aULUB2rYEdkciIa1D">El tiempo</div>
-    <script type="text/javascript" src="https://www.tutiempo.net/s-widget/l_FCgwbBthYcaa8aeU9fzDjzzzz7aULUB2rYEdkciIa1D"></script>
+    <script type="text/javascript" src="https://www.tutiempo.net/s-widget/l_FCgwbBthYcaa8aeU9fzDjzzzz7aULUB2rYEdkciIa1D"></script></div>
+    ------>
     <!-------------------------------------------------------------------body---------------------------------------------------------------------->
-        <div class="titulo body">
-            <p class="titulobody">
-               titulo body
-            </p>
-    <!-----------------------------------------------------------------carrusel 1------------------------------------------------------------------>
-    <div id="carrusel-contenido">
-        <div id="carrusel-caja">
-            <div class="carrusel-elemento">
-               <img class="imagenes" src="IMG_2751.jpg" >
+    <!--------------------------------------------------------contenedor de productos-------------------------------------------------------------->
+        <div class="contenedor-productos">
+            <div class="productos">
+                <figure>
+                    <img src="IMG_2828.jpg" alt="producto">
+                </figure>
+                <div class="info-producto">
+                    <h2>Buzos y Sweters</h2>
+                    <input class="botons"type="submit"value="ver">
+                </div>
             </div>
-            <div class="carrusel-elemento">   
-               <img class="imagenes" src="IMG_2776.jpg">
+            <div class="productos">
+                <figure>
+                    <img src="IMG_2789.jpg" alt="producto">
+                </figure>
+                <div class="info-producto">
+                    <h2>Top y Body</h2>
+                    <input class="botons"type="submit"value="ver">
+                </div>
+            </div> 
+            <div class="productos">
+                <figure>
+                    <img src="IMG_2964.jpg" alt="producto">
+                </figure>
+                <div class="info-producto">
+                    <h2>Pantalones y Jeans</h2>
+                    <input class="botons"type="submit"value="ver">
+                </div>
             </div>
-            <div class="carrusel-elemento">   
-               <img class="imagenes" src="IMG_2789.jpg">                        
+            <div class="productos">
+                <figure>
+                    <img src="IMG_2888.jpg" alt="producto">
+                </figure>
+                <div class="info-producto">
+                    <h2>Remeras y Blusas</h2>
+                    <input class="botons"type="submit"value="ver">
+                </div>
             </div>
-            <div class="carrusel-elemento">   
-                <img class="imagenes" src="IMG_2811.jpg">                        
-             </div>
-             <div class="carrusel-elemento">   
-                <img class="imagenes" src="IMG_2853.jpg">                        
-             </div>
-             <div class="carrusel-elemento">   
-                <img class="imagenes" src="IMG_2888.jpg">                        
-             </div>
+            <div class="productos">
+                <figure>
+                    <img src="IMG_2853.jpg" alt="producto">
+                </figure>
+                <div class="info-producto">
+                    <h2>Polleras, Shores y Vestidos</h2>
+                    <input class="botons"type="submit"value="ver">
+                </div>
+            </div>
+            <div class="productos">
+                <figure>
+                    <img src="IMG_2860.jpg" alt="producto">
+                </figure>
+                <div class="info-producto">
+                    <h2>Abrigos</h2>
+                    <input class="botons"type="submit"value="ver">
+                </div>
+            </div>
         </div>
-    </div>
     </body>
     <!-------------------------------------------------------------------FOOTER-------------------------------------------------------------------->
     <footer> 
@@ -78,7 +106,7 @@
             <div class="ico2">
                 <nav class="nav">
                     <ul id="menu">            
-                        <li><a href="#"target="_blank" rel="noopener noreferrer"><img src="facebook.png"></a></li>
+                        <li><a href="https://www.facebook.com/profile.php?id=100006454685366"target="_blank" rel="noopener noreferrer"><img src="facebook.png"></a></li>
                     </ul></nav></div>
             <div class="ico3">
                 <nav class="nav">
@@ -96,5 +124,8 @@
                         <li><a href="https://www.privacypolicies.com/live/0786550f-d24c-4325-b376-fdf95744c4ac"target="_blank" rel="noopener noreferrer">politica de privacidad</a></li>
                      </ul></nav></div>    
         </section> 
+        <div class="contador"><!-- Start of CuterCounter Code -->
+            <a href="https://www.cutercounter.com/spanish/" target="_blank"><img src="https://www.cutercounter.com/hits.php?id=huxoddxf&nd=6&style=3" border="0" alt="contador de visitas gratis"></a>
+            <!-- End of CuterCounter Code --></div>
     </footer>
 </html>
