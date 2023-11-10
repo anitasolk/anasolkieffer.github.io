@@ -11,36 +11,14 @@ header{
    background-size : 100%;
    background-position :left;
    background-position:top;
-   padding : 220px;
-   justify-content: space-between;
-}
-/*tablet*/
-@media (min-width:800px)AND(max-width:1000px)AND(orientation:portrait){
-    header {background-size:100% ;
-        padding: 110px;
-        margin-left:-50px;}
-}
-/*tablet*/
-@media (min-width:600px)AND(max-width:800px)AND(orientation:portrait){
-    header {background-size:100% ;
-            padding: 90px;
-            margin-left:-50px;}
+   padding : 245px;
 }
 /*movil*/
-@media (min-width:400px)AND(max-width:600px)AND(orientation:portrait){
-    header {background-size: 100%;
-            position: absolute;
-            padding: 70px;
-            padding: -200000000px;
-            margin-left: 0;}
-}
-/*movil*/
-@media (min-width:200px)AND(max-width:400px)AND(orientation:portrait){
-    header {background-size: 100%;
-        padding: 50px;
-        position: absolute;
-        padding: -200000000px;
-        margin-left: 0;}
+@media (max-width:580px)and(orientation:portrait){
+    header{
+        padding: 130px;
+        background-size: -10000%;
+    }
 }
 /*escritorio*/
 @media (min-width:74.999em){
@@ -56,20 +34,18 @@ header{
 }
 /*------------------------------------------------------------------------------------carrito----------------------------------------------------------------------------------------*/
 .carrito{
-    margin-left: -190px;
-    margin-top: -190px;
-    size: -100%;
-}
-/*tablet*/
-@media (min-width:575px)AND(max-width:990px)AND(orientation:portrait){
-    .icoheader{top:4px;
-            size: 20%;
-    }
+    margin-left: -200px;
+    margin-top: -210px;
+    width: 25px;
+    height: 25px;
 }
 /*movil*/
-@media (max-width:575px)and(orientation:portrait){
-    .icoheader{top:2px;
-            size: 10%;
+@media (max-width:580px)and(orientation:portrait){
+    .carrito{
+        margin-left: -350px;
+        margin-top: -350px;
+        width: 10px;
+        height: 10px;
     }
 }
 /*---------------------------------------------------------------barra horizontal-----------------------------------------------------------------*/
@@ -90,7 +66,6 @@ header{
 @media (min-width:800px)AND(max-width:1000px)AND(orientation:portrait){
     .navegador{padding: 80px;}
 }
-/*-------------------------------------------------------fin barra horizontal---------------------------------------------------------------------*/
 .BARRA {
     list-style-type: none;
     margin: 0;
@@ -133,6 +108,7 @@ li.dropdown {
 .dropdown:hover .dropdown-content {
     display: block;
 }
+/*-------------------------------------------------------fin barra horizontal---------------------------------------------------------------------*/
 /*---------------------------------------------------------------BODY-----------------------------------------------------------------------------*/
 body{
     background-color: white; 
@@ -144,11 +120,6 @@ body{
     grid-template-rows: auto 1fr auto;
 }
 /*------------------------------------------------------------------clima-------------------------------------------------------------------------
-.clima { 
-   margin-left:5px;
-   margin-top: 5px;
-}
-
 codigo responsive imagenes 
 @-moz-keyframes automatizacion {
     0% {
@@ -424,27 +395,27 @@ ul{
 @media (max-width:575px) and (orientation:portrait){
     .icono{padding: 3px;
     }
-    .ico1{margin-left: -80px;
+    .ico1{margin-left: -50px;
+        bottom: 100%;
+        top:5px;
+        size: -1000%;
+    }
+    .ico2{margin-left: 50px;
         bottom: 100%;
         top:5px;
         size: -90%;
     }
-    .ico2{margin-left: 30px;
-        bottom: 100%;
-        top:5px;
-        size: -90%;
-    }
-    .ico3{margin-left: 130px;
+    .ico3{margin-left: 135px;
         bottom: 100%;
         top:5px;
         size: -91%;
     }
-    .ico4{margin-left:270px;
+    .ico4{margin-left:430px;
         bottom: 100%;
         top:5px;
         size: -90%;
     }
-    .ico5{margin-left: 180px;
+    .ico5{margin-left: 330px;
         bottom: 100%;
         top:5px;
         margin-top: 70px;
