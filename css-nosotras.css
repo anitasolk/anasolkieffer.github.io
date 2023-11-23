@@ -12,35 +12,13 @@ header{
    background-position :left;
    background-position:top;
    padding : 245px;
-   justify-content: space-between;
-}
-/*tablet*/
-@media (min-width:800px)AND(max-width:1000px)AND(orientation:portrait){
-    header {background-size:100% ;
-        padding: 110px;
-        margin-left:-50px;}
-}
-/*tablet*/
-@media (min-width:600px)AND(max-width:800px)AND(orientation:portrait){
-    header {background-size:100% ;
-            padding: 90px;
-            margin-left:-50px;}
 }
 /*movil*/
-@media (min-width:400px)AND(max-width:600px)AND(orientation:portrait){
-    header {background-size: 100%;
-            position: absolute;
-            padding: 70px;
-            padding: -200000000px;
-            margin-left: 0;}
-}
-/*movil*/
-@media (min-width:200px)AND(max-width:400px)AND(orientation:portrait){
-    header {background-size: 100%;
-        padding: 50px;
-        position: absolute;
-        padding: -200000000px;
-        margin-left: 0;}
+@media (max-width:580px)and(orientation:portrait){
+    header{
+        padding: 130px;
+        background-size: -10000%;
+    }
 }
 /*escritorio*/
 @media (min-width:74.999em){
@@ -57,20 +35,17 @@ header{
 /*------------------------------------------------------------------------------------carrito----------------------------------------------------------------------------------------*/
 .carrito{
     margin-left: -200px;
-    margin-top: -200px;
-    width: 70px;
-    height: 70px;
-}
-/*tablet*/
-@media (min-width:575px)AND(max-width:990px)AND(orientation:portrait){
-    .icoheader{top:4px;
-            size: 20%;
-    }
+    margin-top: -210px;
+    width: 25px;
+    height: 25px;
 }
 /*movil*/
-@media (max-width:575px)and(orientation:portrait){
-    .icoheader{top:2px;
-            size: 10%;
+@media (max-width:580px)and(orientation:portrait){
+    .carrito{
+        margin-left: -350px;
+        margin-top: -350px;
+        width: 10px;
+        height: 10px;
     }
 }
 /*---------------------------------------------------------------barra horizontal-----------------------------------------------------------------*/
@@ -144,18 +119,38 @@ body{
     min-height: 100vh;
     grid-template-rows: auto 1fr auto;
 }
-.texto{
-    left: 600px;
-    margin-right: 5px;
+.conteiner{
+    display: flex;
 }
-.texto p{
-    margin-left: 5px;
-    text-align: justify;
-    size: 4px;
+.fotosbody img{
+    padding: 15px;
+    top:2em;
+    left:5em;
+    height: 1000px;
 }
-.texto h1{
-    size: 10px;
+.textobody{
+    left:22em;
+    top: 35em;
+    width: 70em;
+    line-height: 2em;
+    display: flex;
+    position: absolute;
+    right: 50px;
+}
+.textobody h1{
+    font-size: 35px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: center;
+    bottom: 5px;
+    margin-left: 15em;
+}
+.textobody p{ 
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: justify; 
+    width: 700px;
+    margin-top: 70px;
+    margin-left: -30em;
 }
 /*----------------------------------------------------------------------------------FOOTER-------------------------------------------------------------------------------------------*/
 footer{
@@ -167,7 +162,6 @@ footer{
    bottom: 0;
    border:0;
    left: 0;
-
 }
 /*--------------------------------------------------------------------------------iconos---------------------------------------------------------------------------------------------*/
 .icono{
@@ -219,10 +213,8 @@ ul{
     position: absolute;
     bottom:3.13vh;
     top: 6vh;
+    color: black;
 } 
-li a:hover{
-    background-color: rgb(122, 253, 235);
-}
 .contador{ 
     margin-left: 1370px;
     margin-top: 70px;
@@ -262,27 +254,27 @@ li a:hover{
 @media (max-width:575px) and (orientation:portrait){
     .icono{padding: 3px;
     }
-    .ico1{margin-left: -80px;
+    .ico1{margin-left: -50px;
+        bottom: 100%;
+        top:5px;
+        size: -1000%;
+    }
+    .ico2{margin-left: 50px;
         bottom: 100%;
         top:5px;
         size: -90%;
     }
-    .ico2{margin-left: 30px;
-        bottom: 100%;
-        top:5px;
-        size: -90%;
-    }
-    .ico3{margin-left: 130px;
+    .ico3{margin-left: 135px;
         bottom: 100%;
         top:5px;
         size: -91%;
     }
-    .ico4{margin-left:270px;
+    .ico4{margin-left:300px;
         bottom: 100%;
         top:5px;
         size: -90%;
     }
-    .ico5{margin-left: 180px;
+    .ico5{margin-left: 280px;
         bottom: 100%;
         top:5px;
         margin-top: 70px;
