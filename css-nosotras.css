@@ -4,21 +4,43 @@
     padding: 0;
     box-sizing: border-box;
 }
-/*-----------------------------------------------------------HEADER-----------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------HEADER-----------------------------------------------------------------------------------------*/
 header{
    background-image: url(logo1.jpeg);
    background-repeat: no-repeat;
-   background-size: 100%;
-   padding: 250px;
+   background-size : 100%;
+   background-position :left;
+   background-position:top;
+   padding : 245px;
+   justify-content: space-between;
+}
+/*tablet*/
+@media (min-width:800px)AND(max-width:1000px)AND(orientation:portrait){
+    header {background-size:100% ;
+        padding: 110px;
+        margin-left:-50px;}
+}
+/*tablet*/
+@media (min-width:600px)AND(max-width:800px)AND(orientation:portrait){
+    header {background-size:100% ;
+            padding: 90px;
+            margin-left:-50px;}
 }
 /*movil*/
-@media (max-width:500px)and(orientation:portrait){
-    header{
-        background-repeat: no-repeat;
-        background-size: 100%;
-        padding:0px;
-        background-position: center center;
-    }
+@media (min-width:400px)AND(max-width:600px)AND(orientation:portrait){
+    header {background-size: 100%;
+            position: absolute;
+            padding: 70px;
+            padding: -200000000px;
+            margin-left: 0;}
+}
+/*movil*/
+@media (min-width:200px)AND(max-width:400px)AND(orientation:portrait){
+    header {background-size: 100%;
+        padding: 50px;
+        position: absolute;
+        padding: -200000000px;
+        margin-left: 0;}
 }
 /*escritorio*/
 @media (min-width:74.999em){
@@ -35,27 +57,39 @@ header{
 /*------------------------------------------------------------------------------------carrito----------------------------------------------------------------------------------------*/
 .carrito{
     margin-left: -200px;
-    margin-top: -210px;
-    height: 100%;
-    max-height: 20px ;
-    position: absolute;
+    margin-top: -200px;
+    width: 70px;
+    height: 70px;
+}
+/*tablet*/
+@media (min-width:575px)AND(max-width:990px)AND(orientation:portrait){
+    .icoheader{top:4px;
+            size: 20%;
+    }
 }
 /*movil*/
-@media (max-width:580px)and(orientation:portrait){
-    .carrito{
-        height: 100%;
-        max-height: 10px;
+@media (max-width:575px)and(orientation:portrait){
+    .icoheader{top:2px;
+            size: 10%;
     }
 }
 /*---------------------------------------------------------------barra horizontal-----------------------------------------------------------------*/
-/*----movil-------*/
-@media (max-width:550px)AND(orientation:portrait){
-    .BARRA{
-        width: 100%;
-        max-width: 5800px;
-        overflow: hidden;
-        list-style-type: none;
-    }
+
+/*movil*/
+@media (min-width:200px)AND(max-width:400px)AND(orientation:portrait){
+    .navegador{padding: 20px;}
+}
+/*movil*/
+@media (min-width:400px)AND(max-width:600px)AND(orientation:portrait){
+    .navegador{padding: 30px;}
+}
+/*tablet*/
+@media (min-width:600px)AND(max-width:800px)AND(orientation:portrait){
+    .navegador{padding: 70px;}
+}
+/*tablet*/
+@media (min-width:800px)AND(max-width:1000px)AND(orientation:portrait){
+    .navegador{padding: 80px;}
 }
 .BARRA {
     list-style-type: none;
@@ -63,9 +97,6 @@ header{
     padding: 0;
     overflow: hidden;
     background-color: #f8a8c7;
-    width: 100%;
-    max-width: 2000px;
-    margin-top: -5px;
 }
 li {
     float: left;
@@ -109,79 +140,39 @@ body{
     overflow-x: hidden;
     border: 0;
     margin: 0;
-    display: flex;
-    flex-direction: column;
+    display: grid;
     min-height: 100vh;
     grid-template-rows: auto 1fr auto;
-    
 }
-.conteiner{
-    display: flex;
-}
-.fotosbody{
-    position: relative;
-    display: flex;
-}
-.fotosbody img{
-    padding: 15px;
-    top:2em;
-    left:5em;
-    height: 100%;
-    max-height: 1000px;
+.conteiner2{
+    width: 100%;
+    max-width: 1024px;
 }
 .textobody{
-    width: 70em;
-    display: flex;
-    position: absolute;
-    right: 5em;
+    width: 600px;
+}
+.fotosbody{
+    width: 45%;
+    margin-left: 820px;
+    margin-top: 10px;
 }
 .textobody h1{
-    font-size: 35px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-left: 20px;
+    padding: 5px;
+    font-size: 50px;
+    margin-top: -800px;
     text-align: center;
-    bottom: 5px;
-    margin-left: 15em;
+    margin-bottom: 10px;
 }
-.textobody p{ 
-    font-size: 20px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    text-align: justify; 
-    width: 700px;
-    margin-top: 70px;
-    margin-left: -30em;
-    line-height: 2em;
+.textobody p{
+    margin-left: 20px;
+    font-size: 25px;
+    margin-top: 20px;
+    text-align: justify;
 }
-/*----movil-------*/
-@media (max-width:580px)AND(orientation:portrait){
-    .container2{
-        width: 100%;
-        max-width: 500px;
-    }
-    .fotosbody{
-        display: flex;
-        position: absolute;
-        flex:left;
-    }
-    .fotosbody img{
-        margin-left: 0px;
-        height: 50%;
-        max-width: 50%;
-    }
-    .textobody{
-       position: relative;
-       display: flex;
-       flex-wrap: wrap;
-       right: 1em;
-       margin-top: 1000px;
-    }
-    .textobody h1{
-        font-size: 10px;
-        margin-left: 10px;
-    }
-    .textobody p{ 
-        font-size: 5px; 
-        margin-left: 10px;
-    }
+img {
+    /* Para que sea responsiva */
+    width: 100%;
 }
 /*----------------------------------------------------------------------------------FOOTER-------------------------------------------------------------------------------------------*/
 footer{
@@ -190,7 +181,9 @@ footer{
    position: relative;
    display: flex;
    width: 100%;
-   margin-top: auto;
+   bottom: 0;
+   border:0;
+   left: 0;
 }
 /*--------------------------------------------------------------------------------iconos---------------------------------------------------------------------------------------------*/
 .icono{
@@ -200,6 +193,7 @@ footer{
     transition: all 300ms ease;
     flex-wrap: wrap;
     justify-content: space-between;
+    bottom: 0;
 }
 ul{ 
     list-style:none;
@@ -242,35 +236,60 @@ ul{
     position: absolute;
     bottom:3.13vh;
     top: 6vh;
-    color: black;
 } 
+li a:hover{
+    background-color: rgb(122, 253, 235);
+}
 .contador{ 
     margin-left: 1370px;
     margin-top: 70px;
 }
-/*----movil----*/
-@media (max-width:580px) and (orientation:portrait){
-    footer{
-    background-color: rgb(188, 255, 246);
-    position: relative;
-    display: flex;
-    width: 100%;
-    min-width: 570px; 
-    margin-top: 200px;
+/*----tablet----*/
+@media (min-width: 575px)and (max-width:990px) and (orientation:portrait){
+    .icono{padding: 20px;
     }
-    .icono{padding: 3px;
+    .ico1{margin-left: -80px;
+          bottom: 100%;
+          top:5px;
+          size: 50%;
     }
-    .ico1{margin-left: -50px;
+    .ico2{margin-left: 30px;
         bottom: 100%;
         top:5px;
-        size: -1000%;
+        size: 50%;
     }
-    .ico2{margin-left: 50px;
+    .ico3{margin-left: 130px;
+        bottom: 100%;
+        top:5px;
+        size: 51%;
+    }
+    .ico4{margin-left:720px;
+        bottom: 100%;
+        top:5px;
+        size: 50%;
+    }
+    .ico5{margin-left: 620px;
+        bottom: 100%;
+        top:5px;
+        margin-top: 70px;
+        size: 50%;
+  }
+}
+/*----movil----*/
+@media (max-width:575px) and (orientation:portrait){
+    .icono{padding: 3px;
+    }
+    .ico1{margin-left: -80px;
         bottom: 100%;
         top:5px;
         size: -90%;
     }
-    .ico3{margin-left: 135px;
+    .ico2{margin-left: 30px;
+        bottom: 100%;
+        top:5px;
+        size: -90%;
+    }
+    .ico3{margin-left: 130px;
         bottom: 100%;
         top:5px;
         size: -91%;
@@ -280,14 +299,10 @@ ul{
         top:5px;
         size: -90%;
     }
-    .ico5{margin-left: 150px;
+    .ico5{margin-left: 180px;
         bottom: 100%;
         top:5px;
-        margin-top: 100px;
+        margin-top: 70px;
         size: -90%;
-  }
-  .contador{
-        margin-left: 250px;
-        margin-top: 50px;
   }
 }
