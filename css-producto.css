@@ -14,33 +14,14 @@ header{
    padding : 245px;
    justify-content: space-between;
 }
-/*tablet*/
-@media (min-width:800px)AND(max-width:1000px)AND(orientation:portrait){
-    header {background-size:100% ;
-        padding: 110px;
-        margin-left:-50px;}
-}
-/*tablet*/
-@media (min-width:600px)AND(max-width:800px)AND(orientation:portrait){
-    header {background-size:100% ;
-            padding: 90px;
-            margin-left:-50px;}
-}
 /*movil*/
-@media (min-width:400px)AND(max-width:600px)AND(orientation:portrait){
-    header {background-size: 100%;
-            position: absolute;
-            padding: 70px;
-            padding: -200000000px;
-            margin-left: 0;}
-}
-/*movil*/
-@media (min-width:200px)AND(max-width:400px)AND(orientation:portrait){
-    header {background-size: 100%;
-        padding: 50px;
-        position: absolute;
-        padding: -200000000px;
-        margin-left: 0;}
+@media (max-width:500px)and(orientation:portrait){
+    header{
+        background-repeat: no-repeat;
+        background-size: 100%;
+        padding:0px;
+        background-position: center center;
+    }
 }
 /*escritorio*/
 @media (min-width:74.999em){
@@ -176,6 +157,34 @@ img {
     /* Para que sea responsiva */
     width: 100%;
 }
+/* SECCION RESPONSIVE */
+@media screen and (max-width: 450px) {
+    .body p{
+        font-size: 20px;
+        text-align:start; 
+        margin-left: -40em;
+    }
+    .contenedor {
+      display: block;
+    }
+    .contenedor-items{
+        width: 100% !important;
+        max-width: 425px;
+    }
+    .columna{
+        float: left;
+        width: 18%;
+        padding-right: 1px;
+        padding: 10px;
+        margin-left: 2px;
+    }
+    .columna p{
+    font-size: 5px;
+    }
+    .columna h1{
+    font-size: 10px;
+    }
+}
 /*----------------------------------------------------------------------------------FOOTER-------------------------------------------------------------------------------------------*/
 footer{
     background-color: rgb(188, 255, 246);
@@ -242,52 +251,29 @@ ul{
     margin-left: 1370px;
     margin-top: 70px;
 }
-/*----tablet----*/
-@media (min-width: 575px)and (max-width:990px) and (orientation:portrait){
-    .icono{padding: 20px;
+ /*----movil----*/
+ @media (max-width:580px) and (orientation:portrait){
+    footer{
+    background-color: rgb(188, 255, 246);
+    position: relative;
+    display: flex;
+    width: 100%;
+    min-width: 570px; 
+    margin-top: 60px;
     }
-    .ico1{margin-left: -80px;
-          bottom: 100%;
-          top:5px;
-          size: 50%;
-    }
-    .ico2{margin-left: 30px;
-        bottom: 100%;
-        top:5px;
-        size: 50%;
-    }
-    .ico3{margin-left: 130px;
-        bottom: 100%;
-        top:5px;
-        size: 51%;
-    }
-    .ico4{margin-left:720px;
-        bottom: 100%;
-        top:5px;
-        size: 50%;
-    }
-    .ico5{margin-left: 620px;
-        bottom: 100%;
-        top:5px;
-        margin-top: 70px;
-        size: 50%;
-  }
-}
-/*----movil----*/
-@media (max-width:575px) and (orientation:portrait){
     .icono{padding: 3px;
     }
-    .ico1{margin-left: -80px;
+    .ico1{margin-left: -50px;
+        bottom: 100%;
+        top:5px;
+        size: -1000%;
+    }
+    .ico2{margin-left: 50px;
         bottom: 100%;
         top:5px;
         size: -90%;
     }
-    .ico2{margin-left: 30px;
-        bottom: 100%;
-        top:5px;
-        size: -90%;
-    }
-    .ico3{margin-left: 130px;
+    .ico3{margin-left: 135px;
         bottom: 100%;
         top:5px;
         size: -91%;
@@ -297,10 +283,14 @@ ul{
         top:5px;
         size: -90%;
     }
-    .ico5{margin-left: 180px;
+    .ico5{margin-left: 150px;
         bottom: 100%;
         top:5px;
-        margin-top: 70px;
+        margin-top: 100px;
         size: -90%;
+  }
+  .contador{
+        margin-left: 250px;
+        margin-top: 50px;
   }
 }
