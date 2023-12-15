@@ -4,20 +4,20 @@
     padding: 0;
     box-sizing: border-box;
 }
-/*------------------------------------------------------------------------------------HEADER-----------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------HEADER-----------------------------------------------------------------------------*/
 header{
    background-image: url(logo1.jpeg);
    background-repeat: no-repeat;
-   background-size : 100%;
-   background-position :left;
-   background-position:top;
-   padding : 245px;
+   background-size: 100%;
+   padding: 250px;
 }
 /*movil*/
-@media (max-width:580px)and(orientation:portrait){
+@media (max-width:500px)and(orientation:portrait){
     header{
-        padding: 130px;
-        background-size: -10000%;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        padding:0px;
+        background-position: center center;
     }
 }
 /*escritorio*/
@@ -36,35 +36,26 @@ header{
 .carrito{
     margin-left: -200px;
     margin-top: -210px;
-    width: 25px;
-    height: 25px;
+    height: 100%;
+    max-height: 20px ;
+    position: absolute;
 }
 /*movil*/
 @media (max-width:580px)and(orientation:portrait){
     .carrito{
-        margin-left: -350px;
-        margin-top: -350px;
-        width: 10px;
-        height: 10px;
+        height: 100%;
+        max-height: 10px;
     }
 }
 /*---------------------------------------------------------------barra horizontal-----------------------------------------------------------------*/
-
-/*movil*/
-@media (min-width:200px)AND(max-width:400px)AND(orientation:portrait){
-    .navegador{padding: 20px;}
-}
-/*movil*/
-@media (min-width:400px)AND(max-width:600px)AND(orientation:portrait){
-    .navegador{padding: 30px;}
-}
-/*tablet*/
-@media (min-width:600px)AND(max-width:800px)AND(orientation:portrait){
-    .navegador{padding: 70px;}
-}
-/*tablet*/
-@media (min-width:800px)AND(max-width:1000px)AND(orientation:portrait){
-    .navegador{padding: 80px;}
+/*----movil-------*/
+@media (max-width:550px)AND(orientation:portrait){
+    .BARRA{
+        width: 100%;
+        max-width: 5800px;
+        overflow: hidden;
+        list-style-type: none;
+    }
 }
 .BARRA {
     list-style-type: none;
@@ -72,6 +63,9 @@ header{
     padding: 0;
     overflow: hidden;
     background-color: #f8a8c7;
+    width: 100%;
+    max-width: 2000px;
+    margin-top: -5px;
 }
 li {
     float: left;
@@ -115,27 +109,31 @@ body{
     overflow-x: hidden;
     border: 0;
     margin: 0;
-    display: grid;
+    display: flex;
+    flex-direction: column;
     min-height: 100vh;
     grid-template-rows: auto 1fr auto;
+    
 }
 .conteiner{
+    display: flex;
+}
+.fotosbody{
+    position: relative;
     display: flex;
 }
 .fotosbody img{
     padding: 15px;
     top:2em;
     left:5em;
-    height: 1000px;
+    height: 100%;
+    max-height: 1000px;
 }
 .textobody{
-    left:22em;
-    top: 35em;
     width: 70em;
-    line-height: 2em;
     display: flex;
     position: absolute;
-    right: 50px;
+    right: 5em;
 }
 .textobody h1{
     font-size: 35px;
@@ -151,6 +149,39 @@ body{
     width: 700px;
     margin-top: 70px;
     margin-left: -30em;
+    line-height: 2em;
+}
+/*----movil-------*/
+@media (max-width:580px)AND(orientation:portrait){
+    .container2{
+        width: 100%;
+        max-width: 500px;
+    }
+    .fotosbody{
+        display: flex;
+        position: absolute;
+        flex:left;
+    }
+    .fotosbody img{
+        margin-left: 0px;
+        height: 50%;
+        max-width: 50%;
+    }
+    .textobody{
+       position: relative;
+       display: flex;
+       flex-wrap: wrap;
+       right: 1em;
+       margin-top: 1000px;
+    }
+    .textobody h1{
+        font-size: 10px;
+        margin-left: 10px;
+    }
+    .textobody p{ 
+        font-size: 5px; 
+        margin-left: 10px;
+    }
 }
 /*----------------------------------------------------------------------------------FOOTER-------------------------------------------------------------------------------------------*/
 footer{
@@ -159,9 +190,7 @@ footer{
    position: relative;
    display: flex;
    width: 100%;
-   bottom: 0;
-   border:0;
-   left: 0;
+   margin-top: auto;
 }
 /*--------------------------------------------------------------------------------iconos---------------------------------------------------------------------------------------------*/
 .icono{
@@ -219,39 +248,16 @@ ul{
     margin-left: 1370px;
     margin-top: 70px;
 }
-/*----tablet----*/
-@media (min-width: 575px)and (max-width:990px) and (orientation:portrait){
-    .icono{padding: 20px;
-    }
-    .ico1{margin-left: -80px;
-          bottom: 100%;
-          top:5px;
-          size: 50%;
-    }
-    .ico2{margin-left: 30px;
-        bottom: 100%;
-        top:5px;
-        size: 50%;
-    }
-    .ico3{margin-left: 130px;
-        bottom: 100%;
-        top:5px;
-        size: 51%;
-    }
-    .ico4{margin-left:720px;
-        bottom: 100%;
-        top:5px;
-        size: 50%;
-    }
-    .ico5{margin-left: 620px;
-        bottom: 100%;
-        top:5px;
-        margin-top: 70px;
-        size: 50%;
-  }
-}
 /*----movil----*/
-@media (max-width:575px) and (orientation:portrait){
+@media (max-width:580px) and (orientation:portrait){
+    footer{
+    background-color: rgb(188, 255, 246);
+    position: relative;
+    display: flex;
+    width: 100%;
+    min-width: 570px; 
+    margin-top: 200px;
+    }
     .icono{padding: 3px;
     }
     .ico1{margin-left: -50px;
@@ -269,15 +275,19 @@ ul{
         top:5px;
         size: -91%;
     }
-    .ico4{margin-left:300px;
+    .ico4{margin-left:270px;
         bottom: 100%;
         top:5px;
         size: -90%;
     }
-    .ico5{margin-left: 280px;
+    .ico5{margin-left: 150px;
         bottom: 100%;
         top:5px;
-        margin-top: 70px;
+        margin-top: 100px;
         size: -90%;
+  }
+  .contador{
+        margin-left: 250px;
+        margin-top: 50px;
   }
 }
